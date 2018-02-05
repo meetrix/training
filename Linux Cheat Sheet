@@ -1,0 +1,227 @@
+LINUX
+
+FILE AND DIRECTORY COMMANDS
+# List all files in a long listing (detailed) format
+ls -al
+
+# List all files by name only
+ls
+
+# Display the present working directory
+pwd
+
+# Create a directory
+mkdir directory_name
+
+# Remove (delete) file
+rm file
+
+# Remove the directory and its contents recursively
+rm -r directory_name
+
+# Force removal of file 
+rm -f file_name
+
+# Forcefully remove directory recursively
+rm -rf directory_name
+
+# Copy file1 to file2
+cp file1 file2
+
+# Copy source_directory recursively to destination. If destination exists, copy source_directory into destination, 
+otherwise create destination with the contents of source_directory.
+cp -r source_directory destination
+
+# Rename or move file1 to file2. If file2 is an existing directory, move file1 into directory file2
+mv file1 file2
+
+# Create symbolic link to linkname
+ln -s /path/to/file linkname
+
+# Create an empty file.
+touch file
+
+# View the contents of file
+cat file
+
+#can run last command with root permission
+sudo !!
+# can exit root from 
+ su <user_name> ==> su supuni
+
+# Display the last 10 lines of file and "follow" the file as it grows.
+tail -f file
+example----
+tail -f prod.log ==> can view all logs
+tail -1000 prod.log ==> show last 1000 lines 
+tail -1000 prod.log | grep CRITICAL (show only critical errors)
+
+#Remove process from always start when computer on
+#show all the uploaded processes
+ls /etc/init.d/
+
+remove it by
+sudo update-rc.d -f <process_name>.remove
+
+# start services and stop
+service <process_name> stop
+service <process_name> start
+-------------------------------------------------------------------------------
+PROCESS MANAGEMENT
+# Display your currently running processes
+ps
+
+# Display all the currently running processes on the system.
+ps aux
+
+# Display process information for processname
+ps aux | grep processname
+
+# Display cpu usage memory usage
+top
+
+# Kill process with process ID of pid
+kill pid
+
+# Kill all processes named processname
+
+
+#How to repair ubuntu selection
+
+1. verify that secure-boot disabled
+2.Insert Ubuntu CD and try with Ubuntu cd
+3.open terminal
+4.sudo apt-add-repository ppa:yannubuntu/boot-repair
+5.sudo apt-get update
+6.sudo apt-get install -y boot-repair
+7.boot-repair
+
+--------------------------------------------------------------------
+ SSH LOGINS
+
+# Connect to host as user
+ssh user@host
+
+# Normal Method
+ssh -i <path to file> user@host_name
+	ssh -i .ssh/id_rsa.pub ubuntu@siplo.lk
+-------------------------------------------------------------------------------
+
+FILE TRANSFERS
+# Secure copy file.txt to the /tmp folder on server
+scp file.txt server:/tmp
+
+# Copy *.html files from server to the local /tmp folder.
+scp server:/var/www/* .html /tmp
+	scp root@192.168.8.125:/usr/share/freeswitch/conf/vanilla/vars.xml  /home/pi/
+local machine to server
+	scp /home/supuni/ubuntu/jitsi-images/  meetrix:/home/ubuntu
+
+# Copy all files and directories recursively from server to the current system's /tmp folder.
+scp -r server:/var/www /tmp
+-------------------------------------------------------------------------------
+
+DIRECTORY NAVIGATION
+# To go up one level of the directory tree.
+cd ..
+
+# Go to the $HOME directory
+cd
+
+# Change to the /etc directory
+cd /etc
+-------------------------------------------------------------------------------------------
+SYSTEM INFORMATION
+
+# Show the current date and time
+date
+
+# Show this month's calendar
+cal
+
+# Display USB devices
+lsusb -tv
+-----------------------------------------------------------------------------------
+ FILE PERMISSIONS
+
+        PERMISSION      EXAMPLE
+
+         U   G   W
+        rwx rwx rwx     chmod 777 filename
+        rwx rwx r-x     chmod 775 filename
+        rwx r-x r-x     chmod 755 filename
+        rw- rw- r--     chmod 664 filename
+        rw- r-- r--     chmod 644 filename
+
+# NOTE: Use 777 sparingly!
+
+        LEGEND
+        U = User
+        G = Group
+        W = World
+
+        r = Read
+        w = write
+        x = execute
+        - = no access
+----------------------------------------------------------------------------------
+NETWORKING
+
+# Display all network interfaces and ip address
+ifconfig -a
+
+# Send ICMP echo request to host
+ping ip_address
+
+-----------------------------------------------------------------------------------
+ARCHIEVES
+
+#Compress an Entire Directory or a Single File
+tar -czvf name-of-archive.tar.gz  /path/to/directory-or-file
+	tar -cvf /tmp/freeswitch_conf.tar /etc/freeswitch
+
+- c: Create an archive.
+-z: Compress the archive with gzip.
+-v: Display progress in the terminal while creating the archive, also known as “verbose” mode. The v is always optional in these commands, but it’s helpful.
+-f: Allows you to specify the filename of the archive.
+
+#Extract an Archive
+tar -xzvf archive.tar.gz  /to which folder 
+	tar -xvf /tmp/freeswitch_conf.tar  /etc/freeswitch
+-----------------------------------------------------------------------------------
+SEARCH
+
+# Search for pattern in file
+grep pattern <file_name>
+
+# Search recursively for pattern in directory
+grep -r pattern <directory_name>
+
+# Find files and directories by name
+locate name
+
+# Find files in /home/john that start with "prefix".
+find /home/john -name 'prefix*'
+
+# Find files larger than 100MB in /home
+find /home -size +100M
+----------------------------------------------------------------------------------------------------------------------------
+
+#can view image sizes
+identify <jpg_name>.jpg
+
+ImageMagick is a suite of command-line utilities for resizing, converting
+
+convert howtogeek.png howtogeek.jpg //converting between format
+
+convert howtogeek.png -quality 95 howtogeek.jpg //specify compression level
+
+convert example.png -resize 200x100 example.png //resize image
+
+convert example.png -resize 200x100! example.png // not considering ratio
+
+convert example.png -resize 200 example.png // consider only width
+
+convert example.png -resize x100 example.png // consider only height
+convert howtogeek.jpg -rotate 90 howtogeek-rotated.jpg // rotate image
+
