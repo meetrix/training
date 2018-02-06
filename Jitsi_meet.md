@@ -28,12 +28,12 @@ There are my blog post and script to run this as easy task.
 
 [How to customize Jitsi – Meet](https://meetrix.io/2017/10/31/how-to-customize-jitsi-meet/)
 
-[jitsi_android_customization](https://gist.github.com/SupuniNimeshika/f423978a9407cbf4a2569df167bbecf1)
+[jitsi_android_customization.sh](https://gist.github.com/SupuniNimeshika/f423978a9407cbf4a2569df167bbecf1)
 
 
 ##### HOW TO CUSTOMIZE JITSI IOS APP
 
 There is a script for that also.
 
-[jitsi_ios_customization](https://gist.github.com/SupuniNimeshika/a898e4baa257bb4d76df8fde72d0a2d5)
+[jitsi_ios_customization.sh](https://gist.github.com/SupuniNimeshika/a898e4baa257bb4d76df8fde72d0a2d5)
 
