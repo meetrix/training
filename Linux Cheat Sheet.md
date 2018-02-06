@@ -3,124 +3,124 @@
 ## FILE AND DIRECTORY COMMANDS
 1. List all files in a long listing (detailed) format
 
-ls -al
+	ls -al
 
 
 2. List all files by name only
 
-ls
+	ls
 
 3. Display the present working directory
 
-pwd
+	pwd
 
 4. Create a directory
 
-mkdir directory_name
+	mkdir directory_name
 
 5. Remove (delete) file
 
-rm file
+	rm file
 
 6. Remove the directory and its contents recursively
 
-rm -r directory_name
+	rm -r directory_name
 
 7. Force removal of file 
 
-rm -f file_name
+	rm -f file_name
 
 8. Forcefully remove directory recursively
 
-rm -rf directory_name
+	rm -rf directory_name
 
 9. Copy file1 to file2
 
-cp file1 file2
+	cp file1 file2
 
 10. Copy source_directory recursively to destination. If destination exists, copy source_directory into destination, 
 otherwise create destination with the contents of source_directory.
 
-cp -r source_directory destination
+	cp -r source_directory destination
 
 11. Rename or move file1 to file2. If file2 is an existing directory, move file1 into directory file2
 
-mv file1 file2
+	mv file1 file2
 
 12. Create symbolic link to linkname
 
-ln -s /path/to/file linkname
+	ln -s /path/to/file linkname
 
 13. Create an empty file.
 
-touch file
+	touch file
 
 14. View the contents of file
 
-cat file
+	cat file
 
 15. can run last command with root permission
 
-sudo !!
+	sudo !!
 
 16. can exit root from 
  
- su <user_name> ==> su supuni
+	su <user_name> ==> su supuni
 
 17. Display the last 10 lines of file and "follow" the file as it grows.
 
-tail -f file
+	tail -f file
 
-##########example----
+########## example----
 
-tail -f prod.log ==> can view all logs
+	tail -f prod.log ==> can view all logs
 
-tail -1000 prod.log ==> show last 1000 lines 
+	tail -1000 prod.log ==> show last 1000 lines 
 
-tail -1000 prod.log | grep CRITICAL (show only critical errors)
+	tail -1000 prod.log | grep CRITICAL (show only critical errors)
 
 #########Remove process from always start when computer on
 
 1. show all the uploaded processes
-ls /etc/init.d/
+	ls /etc/init.d/
 
 
 2. remove it by
 
-sudo update-rc.d -f <process_name>.remove
+	sudo update-rc.d -f <process_name>.remove
 
 3. start services and stop
 
-service <process_name> stop
+	service <process_name> stop
 
-service <process_name> start
+	service <process_name> start
 
 ## PROCESS MANAGEMENT
 
 1. Display your currently running processes
 
-ps
+	ps
 
 2. Display all the currently running processes on the system.
 
-ps aux
+	ps aux
 
 3. Display process information for processname
 
-ps aux | grep processname
+	ps aux | grep processname
 
 4. Display cpu usage memory usage
 
-top
+	top
 
 5. Kill process with process ID of pid
 
-kill pid
+	kill pid
 
 
 ##### How to repair BIOS selection
 
-1. verify that secure-boot disabled
+1.verify that secure-boot disabled
 
 2.Insert Ubuntu CD and select try with Ubuntu cd
 
@@ -138,18 +138,19 @@ kill pid
 
 1. Connect to host as user
 
-ssh user@host
+	ssh user@host
 
 2. Normal Method
 
-ssh -i <path to file> user@host_name
+	ssh -i <path to file> user@host_name
+	
 	ssh -i .ssh/id_rsa.pub ubuntu@siplo.lk
 
 ### FILE TRANSFERS
 
 1. Secure copy file.txt to the /tmp folder on server
 
-scp file.txt server:/tmp
+	scp file.txt server:/tmp
 
 2. Copy *.html files from server to the local /tmp folder.
 
@@ -163,35 +164,36 @@ local machine to server
 
 3. Copy all files and directories recursively from server to the current system's /tmp folder.
 
-scp -r server:/var/www /tmp
+	scp -r server:/var/www /tmp
 
 
 ### DIRECTORY NAVIGATION
+
 1. To go up one level of the directory tree.
 
-cd ..
+	cd ..
 
 2. Go to the $HOME directory
 
-cd
+	cd
 
 3. Change to the /etc directory
 
-cd /etc
+	cd /etc
 
 ### SYSTEM INFORMATION
 
 1. Show the current date and time
 
-date
+	date
 
 2. Show this month's calendar
 
-cal
+	cal
 
 3. Display USB devices
 
-lsusb -tv
+	lsusb -tv
 
 ### FILE PERMISSIONS
 
@@ -220,7 +222,7 @@ lsusb -tv
 
 1. Display all network interfaces and ip address
 
-ifconfig -a
+	ifconfig -a
 
 2. Send ICMP echo request to host
 
@@ -231,39 +233,40 @@ ping ip_address
 
 1. Compress an Entire Directory or a Single File
 
-tar -czvf name-of-archive.tar.gz  /path/to/directory-or-file
+	tar -czvf name-of-archive.tar.gz  /path/to/directory-or-file
 	
 2. Extract an Archive
 
-tar -xzvf archive.tar.gz  /to which folder 
+	tar -xzvf archive.tar.gz  /to which folder 
 	
 
 ### SEARCH
 
 1. Search for pattern in file
 
-grep pattern <file_name>
+	grep pattern <file_name>
 
 2. Search recursively for pattern in directory
 
-grep -r pattern <directory_name>
+	grep -r pattern <directory_name>
 
 3. Find files and directories by name
 
-locate name
+	locate name
 
 4. Find files in /home/john that start with "prefix".
 
-find /home/john -name 'prefix*'
+	find /home/john -name 'prefix*'
 
 5. Find files larger than 100MB in /home
 
-find /home -size +100M
+	find /home -size +100M
 
 #### OTHER IMPORTANT COMMANDS
 
 1. can view image sizes
-identify <jpg_name>.jpg
+
+	identify <jpg_name>.jpg
 
 ######### ImageMagick is a suite of command-line utilities for resizing, converting
 
