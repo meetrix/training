@@ -71,7 +71,7 @@ otherwise create destination with the contents of source_directory.
 
 	tail -f file
 
-########## example----
+###### example----
 
 	tail -f prod.log ==> can view all logs
 
@@ -79,7 +79,7 @@ otherwise create destination with the contents of source_directory.
 
 	tail -1000 prod.log | grep CRITICAL (show only critical errors)
 
-#########Remove process from always start when computer on
+###### Remove process from always start when computer on
 
 1. show all the uploaded processes
 	ls /etc/init.d/
@@ -268,7 +268,7 @@ ping ip_address
 
 	identify <jpg_name>.jpg
 
-######### ImageMagick is a suite of command-line utilities for resizing, converting
+######## ImageMagick is a suite of command-line utilities for resizing, converting
 
 convert howtogeek.png howtogeek.jpg //converting between format
 
