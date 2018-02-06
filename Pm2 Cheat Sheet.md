@@ -13,20 +13,20 @@ pm2 list               # Display all processes status
 
 ### Logs
 
-pm2 logs [--raw]       # Display all processes logs in streaming
-pm2 flush              # Empty all log files
-pm2 reloadLogs         # Reload all logs
+1.pm2 logs [--raw]       # Display all processes logs in streaming
+2.pm2 flush              # Empty all log files
+3.pm2 reloadLogs         # Reload all logs
 
 ### Actions
 
-pm2 stop all           # Stop all processes
-pm2 restart all        # Restart all processes
+1.pm2 stop all           # Stop all processes
+2.pm2 restart all        # Restart all processes
 
-pm2 reload all         # Will 0s downtime reload (for NETWORKED apps)
+3.pm2 reload all         # Will 0s downtime reload (for NETWORKED apps)
 
-pm2 stop 0             # Stop specific process id
-pm2 restart 0          # Restart specific process id
+4.pm2 stop 0             # Stop specific process id
+5.pm2 restart 0          # Restart specific process id
 
-pm2 delete 0           # Will remove process from pm2 list
-pm2 delete all         # Will remove all processes from pm2 list
+6.pm2 delete 0           # Will remove process from pm2 list
+7.pm2 delete all         # Will remove all processes from pm2 list
 
