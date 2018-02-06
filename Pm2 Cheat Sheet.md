@@ -1,17 +1,17 @@
-PM2 is a production process manager for Node.js applications with a built-in load balancer. 
-It allows you to keep applications alive forever, to reload them without downtime and to facilitate 
+PM2 is a production process manager for Node.js applications with a built-in load balancer.  
+It allows you to keep applications alive forever, to reload them without downtime and to facilitate
 common system admin tasks.
 
-Install pm2
+### Install pm2
 npm install pm2@latest -g
 
-# Fork mode
+###Fork mode
 pm2 start app.js --name my-api # Name process
 
-# Listing
+###Listing
 pm2 list               # Display all processes status
 
-# Logs
+###Logs
 
 pm2 logs [--raw]       # Display all processes logs in streaming
 pm2 flush              # Empty all log files
