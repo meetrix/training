@@ -6,8 +6,10 @@ A quick guide for technology stack being used
 1. [Linux Cheat Sheet](https://github.com/meetrix/training/blob/master/Linux%20Cheat%20Sheet.md)
 2. [Git Version Control](https://github.com/meetrix/training/blob/master/Git%20Version%20Control.md)
 3. [MySQL Cheat Sheet](https://github.com/meetrix/training/blob/master/MySQL%20Cheat%20Sheet.md)
-4. [pm2 Cheat Sheet](https://github.com/meetrix/training/blob/master/Pm2%20Cheat%20Sheet.md)
+4. [Symfony](https://github.com/meetrix/training/blob/master/Symfony.md)
 5. [AWS Cloud Computing](https://github.com/meetrix/training/blob/master/AWS%20Cloud%20Computing.md)
+6. [Jitsi Meet](https://github.com/meetrix/training/blob/master/Jitsi%20Meet.md)
+7. [pm2 Cheat Sheet](https://github.com/meetrix/training/blob/master/Pm2%20Cheat%20Sheet.md)
 
 #### Overall Best Practices
 
