@@ -20,7 +20,15 @@
 ###### compile css 
 
  ./node_modules/.bin/node-sass css/main.scss css/all.bundle.css && ./node_modules/.bin/cleancss css/all.bundle.css > 
-css/all.css ; rm css/all.bundle.css 
+css/all.css ; rm css/all.bundle.css
+
+##### HOW TO RUN JITSI ANDROID
+
+Go to your project folder using terminal and run following two commands same time using two terminals.
+
+react-native run-android
+
+react-native start
 
 ##### HOW TO CUSTOMIZE JITSI ANDROID
 
