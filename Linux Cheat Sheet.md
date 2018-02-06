@@ -206,7 +206,7 @@ local machine to server
         rw- rw- r--     chmod 664 filename
         rw- r-- r--     chmod 644 filename
 
-# NOTE: Use 777 sparingly!
+####### NOTE: Use 777 sparingly!
 
         LEGEND
         U = User
