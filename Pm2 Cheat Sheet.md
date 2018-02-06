@@ -6,7 +6,8 @@ common system admin tasks.
 npm install pm2@latest -g
 
 ### Fork mode
-pm2 start app.js --name my-api # Name process
+pm2 start app.js --name my-api 
+  Name process
 
 ### Listing
 pm2 list               # Display all processes status
