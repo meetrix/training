@@ -153,8 +153,11 @@ Those file names should add in .gitignore file as above.
 
 ##### 11. VIEW THE REMOTE REPOSITORY:
     		    git remote -v 
+
+##### 12. CHANGED THE REMOTE URL:
+		    git remote set-url origin <git_url>
 		
-##### 12. RESOLVING CONFLICTS:
+##### 13. RESOLVING CONFLICTS:
 Conflicts occurred mostly when merging two branches or when pushing changes to the remote.
 First, the conflicted file should be modified appropriately. 
 Then add those changes:
