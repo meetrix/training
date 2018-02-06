@@ -1,19 +1,7 @@
-#MySQL CheatSheet
-=======================================================================================================
+# MySQL CheatSheet
 
 1. Log into mysql:
 	mysql -u [username] -p;(will prompt for password)
-  
-  data types (INTEGER,FLOAT, DECIMAL(i, j), CHAR(n), VARCHAR(n))
-  DATE:
-  • Made up of year-month-day in the format yyyy-mm-dd
-  TIME:
-  • Made up of hour:minute:second in the format hh:mm:ss
-  TIME(i):
-  • Made up of hour:minute:second plus i additional digits specifying fractions of a second
-  • format is hh:mm:ss:ii...i
-  TIMESTAMP:
-  • Has both DATE and TIME components
   
 2. Show all databases:
 	SHOW DATABASES;
@@ -153,8 +141,8 @@
 38. To eliminate duplicate tuples in a query result
   SELECT DISTINCT SALARY
   FROM EMPLOYEE
------------------------------------------------------------------------------------------
-Aggregate functions
+
+### Aggregate functions
 
 1. Select but without duplicates:
 	SELECT distinct name, email, acception FROM owners WHERE acception = 1 AND date >= 	2015-01-01 00:00:00
@@ -177,8 +165,8 @@ Aggregate functions
 7. Get rounded average value and group by [category-column]:
 	SELECT [category-column], ROUND(AVG([column]), 2) FROM [table] GROUP BY 	[category-column];
   
------------------------------------------------------------------------------------------------
-##Users functions
+
+### Users functions
 
 1. List all users:
 	SELECT User,Host FROM mysql.user;
@@ -189,8 +177,8 @@ Aggregate functions
 3. Grant ALL access to user for * tables:
 	GRANT ALL ON database.* TO 'user'@'localhost';
 	
------------------------------------------------------------------------------------------------
-##MySQL Mathematical Functions
+
+### MySQL Mathematical Functions
 
 1. Count rows per group	COUNT(column | *)
 
@@ -218,8 +206,8 @@ Aggregate functions
 
 13. sin (similar cos, etc.)	sin(number)
 
-------------------------------------------------------------------------------------
-##MySQL String Functions
+
+### MySQL String Functions
 
 1. Compare strings	strcmp(string1,string2)
 
@@ -247,9 +235,9 @@ Aggregate functions
 
 13.Extract month from date string	monthname(string)
 
------------------------------------------------------------------------------------
-##OTHER ACTIONS
-#reset root password
+
+### OTHER ACTIONS
+###### reset root password
 
 sudo /etc/init.d/mysql stop
 sudo mysqld_safe --skip-grant-tables &
