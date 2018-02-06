@@ -13,7 +13,7 @@ A quick guide for technology stack being used
 
 #### Overall Best Practices
 
-1. Create issue for every task you are asigning.
+1. Create issue for every task you are assigning.
 2. Maintain own cheat sheet with all required commands through works
 3. Practice keyboard typing
 4. Always refer to official documentation of any technology you are using
