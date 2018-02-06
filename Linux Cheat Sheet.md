@@ -268,7 +268,7 @@ ping ip_address
 
 	identify <jpg_name>.jpg
 
-######## ImageMagick is a suite of command-line utilities for resizing, converting
+###### ImageMagick is a suite of command-line utilities for resizing, converting
 
 convert howtogeek.png howtogeek.jpg //converting between format
 
