@@ -1,6 +1,7 @@
 # MySQL CheatSheet
 
 1. Log into mysql:
+
 	mysql -u [username] -p;(will prompt for password)
   
 2. Show all databases:
