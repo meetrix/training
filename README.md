@@ -9,7 +9,7 @@ A quick guide for technology stack being used
 4. [Symfony](https://github.com/meetrix/training/blob/master/Symfony.md)
 5. [AWS Cloud Computing](https://github.com/meetrix/training/blob/master/AWS%20Cloud%20Computing.md)
 6. [Jitsi Meet](https://github.com/meetrix/training/blob/master/Jitsi%20Meet.md)
-7. [pm2 Cheat Sheet](https://github.com/meetrix/training/blob/master/Pm2%20Cheat%20Sheet.md)
+7. [Pm2 Cheat Sheet](https://github.com/meetrix/training/blob/master/Pm2%20Cheat%20Sheet.md)
 
 #### Overall Best Practices
 
